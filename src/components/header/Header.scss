@@ -1,0 +1,41 @@
+.logo{
+    width: 150px;
+    height: 50px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.user_block{
+    color:white;
+    font-size: 0.8rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    // &:hover{
+    //     span{
+    //         color: blue;
+    //     }
+    // }
+
+    span{
+        font-weight: 600;
+        color: blanchedalmond;
+    }
+}
+.block_avt{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid white;
+    margin-right: 0.5rem;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}

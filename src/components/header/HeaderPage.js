@@ -11,15 +11,36 @@ import "./Header.scss";
 
 import { navData } from "../../data/data";
 import logo from "../../imgage/logo.svg";
-import avt from "../../imgage/userIcon.jpg";
+// import avt from "../../imgage/userIcon.jpg";
 import { UserOutlined } from "@ant-design/icons";
 import { Link, useNavigate } from "react-router-dom";
-
+import avt from "../../imgage/av.jpg";
+import { useEffect } from "react";
 const { Text } = Typography;
 const { Header, Content, Footer } = Layout;
 
 function HeaderPage() {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const handScroll = () => {
+      const header = document.querySelector(".header");
+
+      if (window.scrollY > 50) {
+        header.classList.add("color_black");
+        console.log(window.scrollY);
+      } else {
+        header.classList.remove("color_black");
+      }
+    };
+    window.addEventListener("scroll", handScroll);
+
+    //cleanup function
+    return () => {
+      window.removeEventListener("scroll", handScroll);
+    };
+  }, []);
+
   //redict login page
   const handleRedictLogin = () => {
     //redict
@@ -27,6 +48,7 @@ function HeaderPage() {
   };
   return (
     <Header
+      className="header"
       style={{
         display: "flex",
         justifyContent: "space-between",

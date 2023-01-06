@@ -1,0 +1,67 @@
+.section-member{
+    background-image: url("../../imgage/bg-member.jpg");
+    padding: 2rem;
+   
+    .btn-dangky{
+        margin-top: 2rem;
+        background-color: white;
+        color: #B1E693;
+        font-weight: 700;
+        &:hover{
+            background-color: black;
+            color: white;
+        }
+    }
+
+    .section-member-title{
+        margin-bottom: 2rem;
+    }
+
+}
+
+.section-promotion{
+    background-image: url("../../imgage/bg-home-02.jpg");
+    padding: 4rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+    .block-pro{
+        overflow: hidden;
+       img{
+        transition: all 0.4s;
+       }
+        &:hover{
+            img{
+                transform: scale(1.1);
+            }
+        }
+    }
+   
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer{
+    background-image: url("../../imgage/bg-grid.jpg");
+    padding: 4.5rem 4.5rem 2rem 4.5rem;
+
+    .block_text{
+        display: flex;
+        flex-direction: column;
+       
+        align-items: flex-start;
+        
+    }
+    .footer_texxt{
+        color: #c3cc26;
+        font-size: 16px;
+        cursor: pointer;
+        &:hover{
+            color:white;
+        }
+    }
+}

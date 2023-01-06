@@ -1,4 +1,8 @@
 export const navData = [
+     {
+        id:"mvmfvd",
+        text: "Trang chủ"
+    },
     {
         id:"mvmfv",
         text: "Lịch chiếu"

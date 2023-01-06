@@ -5,6 +5,9 @@ import logo from "../imgage/logo.svg";
 import HeaderPage from "../components/header/HeaderPage";
 import CarouselComponent from "../components/CarouselComponent";
 import BanerFilms from "../components/film/BanerFilms";
+import CardsComponent from "../components/ui/CardsComponent";
+import PromotionComponent from "../components/ui/PromotionComponent";
+import FooterComponent from "../components/ui/FooterComponent";
 
 const { Header, Content, Footer } = Layout;
 const HomePage = () => {
@@ -16,6 +19,9 @@ const HomePage = () => {
       <HeaderPage />
       <CarouselComponent />
       <BanerFilms />
+      <CardsComponent />
+      <PromotionComponent />
+      <FooterComponent />
       {/* <Content
         style={{
           padding: "0 50px",

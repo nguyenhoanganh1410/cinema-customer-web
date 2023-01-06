@@ -1,9 +1,18 @@
 .card_film{
     width: 220px;
    // height: 380px;
-    background-color: white;
+    background-color: transparent;
     border-radius: 8px;
     cursor: pointer;
+    .btn_muave{
+        background-color: #51b048;
+        
+        &:hover{
+            background-color: white;
+            color: #51b048;
+        }
+
+    }
     .card_film-top{
         height: 60%;
         width: 100%;
@@ -24,10 +33,14 @@
         height: 40%;
         padding: 14px;
         .card_film-text{
+            color: white;
             margin: 0;
             text-transform: capitalize;
-            font-weight: 600;
-            font-size: 0.9rem;
+            font-weight: 700;
+            font-size: 1rem;
+            &:hover{
+                color: #51b048;
+            }
         }
     }
 }

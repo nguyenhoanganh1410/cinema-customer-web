@@ -25,10 +25,14 @@ const FilmCard = () => (
         </Text>
         <Button
           type="primary"
-          style={{ marginTop: "1rem", width: "100%" }}
+          className="btn_muave"
+          style={{
+            marginTop: "1rem",
+            width: "100%",
+          }}
           icon={<DatabaseOutlined />}
         >
-          Mua ngay
+          Mua vé
         </Button>
       </div>
     </div>

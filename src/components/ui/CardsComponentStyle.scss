@@ -1,5 +1,7 @@
 .section-member{
     background-image: url("../../imgage/bg-member.jpg");
+    background-attachment: fixed;
+
     padding: 2rem;
    
     .btn-dangky{
@@ -47,6 +49,7 @@
 
 .footer{
     background-image: url("../../imgage/bg-grid.jpg");
+  
     padding: 4.5rem 4.5rem 2rem 4.5rem;
 
     .block_text{
@@ -60,6 +63,7 @@
         color: #c3cc26;
         font-size: 16px;
         cursor: pointer;
+        margin-bottom: 0.5rem;
         &:hover{
             color:white;
         }

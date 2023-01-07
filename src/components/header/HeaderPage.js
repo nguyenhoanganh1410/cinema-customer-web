@@ -46,6 +46,19 @@ function HeaderPage() {
     //redict
     // navigate("/login");
   };
+
+  //click nav item
+  const onClickMenuNav = (info) => {
+    console.log(info);
+    //if user click showtimes
+    if (info.key === "showtimes") {
+      navigate("/lich-chieu");
+    } else if (info.key === "profile") {
+    } else if (info.key === " setting") {
+    } else if (info.key) {
+      navigate("/");
+    }
+  };
   return (
     <Header
       className="header"
@@ -66,6 +79,7 @@ function HeaderPage() {
           <img src={logo} />
         </div>
         <Menu
+          onClick={onClickMenuNav}
           theme="dark"
           mode="horizontal"
           defaultSelectedKeys={["2"]}

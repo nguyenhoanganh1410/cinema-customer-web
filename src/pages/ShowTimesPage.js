@@ -18,7 +18,7 @@ const ShowTimesPage = () => {
     <Layout className="layout">
       <HeaderPage />
 
-      <BanerFilms />
+      <BanerFilms showtimes/>
 
       <PromotionComponent />
       <FooterComponent />

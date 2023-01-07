@@ -1,0 +1,89 @@
+.theater_location{
+    .theater_location-top{
+        display: flex;
+        .active{
+            transition: all 0.8s;
+            background-color: #42af33 !important;
+        }
+        .block_location{
+            border-radius: 6px;
+            width: 160px;
+            padding: 6px 0;
+           background-color: #263247;
+           margin-right: 1rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:hover{
+                background-color: #42af33;
+            }
+            img{
+                width: 20px;
+                height: 20px;
+                object-fit: cover;
+                margin-right: 6px;
+            }
+            .block_location-text{
+                color: white;
+                font-weight:600;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .theater_location-bottom{
+        margin: 2rem 0;
+        .block_theater{
+            height: 160px;
+            background-color: #151f28;
+            border-radius: 6px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            color: white;
+          
+            cursor: pointer;
+            &:hover{
+                .theater_location-bottom-gg{
+                    background-color: #42af33;
+                }
+            }
+
+            .block_theater-top{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                padding: 12px;
+                
+                .color_text{
+                    font-size: 12px;
+                    color: #90a0ba;
+                }
+            }
+        }
+        .threater_text{
+            color: white;
+            text-align: start;
+        }
+        .theater_location-bottom-gg{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 4px 0;
+            background-color: #263247;
+            transition: all 0.4s;
+            .threater_text{
+               font-weight: 600;
+               font-size: 14px;
+               text-align: center;
+            }
+            img{
+                width: 16px;
+                height: 16px;
+                margin-right: 8px;
+                object-fit: cover;
+            }
+        }
+    }
+}

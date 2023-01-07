@@ -1,22 +1,22 @@
 export const navData = [
      {
-        id:"mvmfvd",
+        id:"home",
         text: "Trang chủ"
     },
     {
-        id:"mvmfv",
+        id:"showtimes",
         text: "Lịch chiếu"
     },
     {
-        id:"mvmfvgt",
+        id:"theater",
         text: "Hệ thống rạp"
     },
     {
-        id:"mvmfvvf",
+        id:"promotion",
         text: "Khuyến mãi"
     },
     {
-        id:"mvmfvg2t",
+        id:"aboutus",
         text: "Về chúng tôi"
     },
 ]

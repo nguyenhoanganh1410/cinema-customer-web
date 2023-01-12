@@ -8,22 +8,19 @@ import BanerFilms from "../components/film/BanerFilms";
 import CardsComponent from "../components/ui/CardsComponent";
 import PromotionComponent from "../components/ui/PromotionComponent";
 import FooterComponent from "../components/ui/FooterComponent";
+import FilmDetailsComponent from "../components/film/FilmDetailsComponent";
 
 const { Header, Content, Footer } = Layout;
-const ShowTimesPage = () => {
+const MoviePage = () => {
   const {
     token: { colorBgContainer },
   } = theme.useToken();
   return (
     <Layout className="layout">
       <HeaderPage />
-
-      <BanerFilms showtimes/>
-
-      <PromotionComponent />
+      <FilmDetailsComponent />
       <FooterComponent />
-     
     </Layout>
   );
 };
-export default ShowTimesPage;
+export default MoviePage;

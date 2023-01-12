@@ -1,11 +1,15 @@
 import "./BanerFilmStyle.scss";
-import { Tabs } from "antd";
+import { Row, Tabs, Col, Typography, Button } from "antd";
 import FilmCard from "./FilmCard";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import { useEffect, useState } from "react";
 import TheaterLocationComponent from "./TheaterLocationComponent";
+import image from "../../imgage/film_01.jpg";
+import LocationComponent from "./LocationComponent";
+
+const { Text, Title } = Typography;
 const data = [
   {
     id: "tab01",
@@ -49,9 +53,9 @@ const BanerFilms = ({ showtimes }) => {
   const ListFilm = () => {
     return (
       <div className="container">
-        <OwlCarousel items={4} className="owl-theme" loop autoplay={true}>
+        <OwlCarousel items={items} className="owl-theme" loop autoplay={true}>
           {data.map((val) => {
-            return <FilmCard />;
+            return <FilmCard showtimes/>;
           })}
         </OwlCarousel>
       </div>
@@ -94,6 +98,159 @@ const BanerFilms = ({ showtimes }) => {
           ]}
         />
       )}
+
+      <div className="film_choise">
+        <Row className="container">
+          <Col span={4}>
+            <div className="film_choise-imgae">
+              <img src={image}></img>
+            </div>
+          </Col>
+          <Col span={20} className="film_choise-content">
+            <Title level={3} style={{ color: "white" }}>
+              Thanh Soi
+            </Title>
+            <div className="block_title">
+              <span>2D</span>
+            </div>
+            <Text style={{ color: "#a6b2c9" }}>
+              Một tác phẩm hành động thuộc "vũ trụ" Hai Phượng. Phim là câu
+              chuyện về thời trẻ của nữ trùm "Thanh Sói", mang đến hành trình
+              hắc hóa từ 1 đứa trẻ ngây thơ thành tội phạm khét tiếng nhất Sài
+              Gòn
+            </Text>
+          </Col>
+        </Row>
+        <Row className="container" style={{ marginTop: "4rem" }}>
+          <Col span={5}>
+            <LocationComponent />
+          </Col>
+          <Col span={1}></Col>
+          <Col span={18}>
+            <Row>
+              <Col span={1}>
+                <div>
+                  {" "}
+                  <div className="block_title">
+                    <span>2D</span>
+                  </div>
+                  <div className="block_title">
+                    <span>3D</span>
+                  </div>
+                </div>
+              </Col>
+              <Col span={1}></Col>
+              <Col
+                span={20}
+                style={{
+                  textAlign: "start",
+                  display: "flex",
+                  flexWrap: "wrap",
+                }}
+              >
+                <div className="group_time">
+                  <Button className="btn_time">16:00</Button>
+                </div>
+                <div className="group_time">
+                  <Button className="btn_time">16:00</Button>
+                </div>
+                <div className="group_time">
+                  <Button className="btn_time">16:00</Button>
+                </div>
+                <div className="group_time">
+                  <Button className="btn_time">16:00</Button>
+                </div>
+                <div className="group_time">
+                  <Button className="btn_time">16:00</Button>
+                </div>
+                <div className="group_time">
+                  <Button className="btn_time">16:00</Button>
+                </div>
+                <div className="group_time">
+                  <Button className="btn_time">16:00</Button>
+                </div>
+                <div className="group_time">
+                  <Button className="btn_time">16:00</Button>
+                </div>
+                <div className="group_time">
+                  <Button className="btn_time">16:00</Button>
+                </div>
+                <div className="group_time">
+                  <Button className="btn_time">16:00</Button>
+                </div>
+                <div className="group_time">
+                  <Button className="btn_time">16:00</Button>
+                </div>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
+        <Row className="container" style={{ marginTop: "4rem" }}>
+          <Col span={5}>
+            <LocationComponent />
+          </Col>
+          <Col span={1}></Col>
+          <Col span={18}>
+            <Row>
+              <Col span={1}>
+                <div>
+                  {" "}
+                  <div className="block_title">
+                    <span>2D</span>
+                  </div>
+                  <div className="block_title">
+                    <span>3D</span>
+                  </div>
+                </div>
+              </Col>
+              <Col span={1}></Col>
+              <Col
+                span={20}
+                style={{
+                  textAlign: "start",
+                  display: "flex",
+                  flexWrap: "wrap",
+                }}
+              >
+                <div className="group_time">
+                  <Button className="btn_time">16:00</Button>
+                </div>
+                <div className="group_time">
+                  <Button className="btn_time">16:00</Button>
+                </div>
+                <div className="group_time">
+                  <Button className="btn_time">16:00</Button>
+                </div>
+                <div className="group_time">
+                  <Button className="btn_time">16:00</Button>
+                </div>
+                <div className="group_time">
+                  <Button className="btn_time">16:00</Button>
+                </div>
+                <div className="group_time">
+                  <Button className="btn_time">16:00</Button>
+                </div>
+                <div className="group_time">
+                  <Button className="btn_time">16:00</Button>
+                </div>
+                <div className="group_time">
+                  <Button className="btn_time">16:00</Button>
+                </div>
+                <div className="group_time">
+                  <Button className="btn_time">16:00</Button>
+                </div>
+                <div className="group_time">
+                  <Button className="btn_time">16:00</Button>
+                </div>
+                <div className="group_time">
+                  <Button className="btn_time">16:00</Button>
+                </div>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
+       
+      </div>
     </section>
   );
 };

@@ -3,6 +3,7 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import { useEffect, useState } from "react";
 import locationIcon from "../../imgage/th.jpg";
+import LocationComponent from "./LocationComponent";
 import "./TheaterLocationStyle.scss";
 const { Text, Title } = Typography;
 const cities = [
@@ -50,21 +51,11 @@ const TheaterLocationComponent = () => {
         <div className="theater_location-bottom">
           <Row style={{ margin: "2rem 0" }} gutter={[24, 24]}>
             <Col span={6}>
-              <div className="block_theater">
-                <div className="block_theater-top">
-                  <Title className="threater_text" level={5}>
-                    BHD Star Phan Ngo Thanh
-                  </Title>
-                  <Text className="threater_text color_text">
-                    Tầng 8 vinhom center park
-                  </Text>
-                </div>
-                <div className="theater_location-bottom-gg">
-                  <img src={locationIcon} />
-                  <Text className="threater_text">Xem</Text>
-                </div>
-              </div>
+              <LocationComponent />
             </Col>
+            <Col span={6}></Col>
+            <Col span={6}></Col>
+            <Col span={6}></Col>
             <Col span={6}>
               <div className="block_theater">
                 <div className="block_theater-top">
@@ -81,86 +72,8 @@ const TheaterLocationComponent = () => {
                 </div>
               </div>
             </Col>
-            <Col span={6}>
-              <div className="block_theater">
-                <div className="block_theater-top">
-                  <Title className="threater_text" level={5}>
-                    BHD Star Phan Ngo Thanh
-                  </Title>
-                  <Text className="threater_text color_text">
-                    Tầng 8 vinhom center park
-                  </Text>
-                </div>
-                <div className="theater_location-bottom-gg">
-                  <img src={locationIcon} />
-                  <Text className="threater_text">Xem</Text>
-                </div>
-              </div>
-            </Col>
-            <Col span={6}>
-              <div className="block_theater">
-                <div className="block_theater-top">
-                  <Title className="threater_text" level={5}>
-                    BHD Star Phan Ngo Thanh
-                  </Title>
-                  <Text className="threater_text color_text">
-                    Tầng 8 vinhom center park
-                  </Text>
-                </div>
-                <div className="theater_location-bottom-gg">
-                  <img src={locationIcon} />
-                  <Text className="threater_text">Xem</Text>
-                </div>
-              </div>
-            </Col>
-            <Col span={6}>
-              <div className="block_theater">
-                <div className="block_theater-top">
-                  <Title className="threater_text" level={5}>
-                    BHD Star Phan Ngo Thanh
-                  </Title>
-                  <Text className="threater_text color_text">
-                    Tầng 8 vinhom center park
-                  </Text>
-                </div>
-                <div className="theater_location-bottom-gg">
-                  <img src={locationIcon} />
-                  <Text className="threater_text">Xem</Text>
-                </div>
-              </div>
-            </Col>
-            <Col span={6}>
-              <div className="block_theater">
-                <div className="block_theater-top">
-                  <Title className="threater_text" level={5}>
-                    BHD Star Phan Ngo Thanh
-                  </Title>
-                  <Text className="threater_text color_text">
-                    Tầng 8 vinhom center park
-                  </Text>
-                </div>
-                <div className="theater_location-bottom-gg">
-                  <img src={locationIcon} />
-                  <Text className="threater_text">Xem</Text>
-                </div>
-              </div>
-            </Col>
-            <Col span={6}>
-              <div className="block_theater">
-                <div className="block_theater-top">
-                  <Title className="threater_text" level={5}>
-                    BHD Star Phan Ngo Thanh
-                  </Title>
-                  <Text className="threater_text color_text">
-                    Tầng 8 vinhom center park
-                  </Text>
-                </div>
-                <div className="theater_location-bottom-gg">
-                  <img src={locationIcon} />
-                  <Text className="threater_text">Xem</Text>
-                </div>
-              </div>
-            </Col>
+            <Col span={6}></Col>
+            <Col span={6}></Col>
           </Row>
         </div>
       </div>

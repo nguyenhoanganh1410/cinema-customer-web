@@ -1,0 +1,60 @@
+.film_details{
+    background-image: url("../../imgage/manystar.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 4rem 0;
+    .container{
+        .detail_block{
+           // background-color: red;
+           height: 90%;
+          
+
+            img{
+                cursor: pointer;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .detail_block_content{
+            display: flex;
+            flex-direction: column;
+           
+            align-items: flex-start;
+            margin-left: 24px;
+            .btn_group{
+                display: flex;
+                margin-top: 48px;
+                .btn_muave{
+                    margin-right: 1rem;
+                    background-color: #51b048;
+                }
+            }
+            .content_title{
+                color: white;
+
+            }
+            .content_text{
+                text-align: start;
+                color: #a6b2c9;
+                
+            }
+            .text_content{
+                margin-top: 24px;
+                display: flex;
+                justify-content: space-between;
+                width: 300px;
+                .text_content-title{
+                    
+                    color: #e8eff5;
+                }
+                .text_content-text{
+                    color: #e8eff5;
+                    text-align: start;
+                }
+            }
+        }
+    }
+}

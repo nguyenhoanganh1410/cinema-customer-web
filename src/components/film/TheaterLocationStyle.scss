@@ -34,32 +34,33 @@
 
     .theater_location-bottom{
         margin: 2rem 0;
-        .block_theater{
-            height: 160px;
-            background-color: #151f28;
-            border-radius: 6px;
+    }
+}
+    .block_theater{
+        height: 160px;
+        background-color: #151f28;
+        border-radius: 6px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: white;
+        box-shadow: 6px -6px 11px 0px rgba(0,0,0,0.34);
+        cursor: pointer;
+        &:hover{
+            .theater_location-bottom-gg{
+                background-color: #42af33;
+            }
+        }
+
+        .block_theater-top{
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            color: white;
-          
-            cursor: pointer;
-            &:hover{
-                .theater_location-bottom-gg{
-                    background-color: #42af33;
-                }
-            }
-
-            .block_theater-top{
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
-                padding: 12px;
-                
-                .color_text{
-                    font-size: 12px;
-                    color: #90a0ba;
-                }
+            justify-content: flex-start;
+            padding: 12px;
+            
+            .color_text{
+                font-size: 12px;
+                color: #90a0ba;
             }
         }
         .threater_text{
@@ -86,4 +87,3 @@
             }
         }
     }
-}

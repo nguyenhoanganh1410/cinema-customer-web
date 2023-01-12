@@ -28,7 +28,7 @@ function HeaderPage() {
 
       if (window.scrollY > 50) {
         header.classList.add("color_black");
-        console.log(window.scrollY);
+       // console.log(window.scrollY);
       } else {
         header.classList.remove("color_black");
       }

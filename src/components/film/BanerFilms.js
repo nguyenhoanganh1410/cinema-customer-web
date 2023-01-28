@@ -20,7 +20,7 @@ const data = [
     name: "Phim sắp chiếu",
   },
 ];
-const BanerFilms = ({ showtimes }) => {
+const BanerFilms = ({ showTimes }) => {
   //items in carousel
   const [items, setItems] = useState(5);
 
@@ -55,7 +55,7 @@ const BanerFilms = ({ showtimes }) => {
       <div className="container">
         <OwlCarousel items={items} className="owl-theme" loop autoplay={true}>
           {data.map((val) => {
-            return <FilmCard showtimes/>;
+            return <FilmCard showTimes={showTimes} />;
           })}
         </OwlCarousel>
       </div>
@@ -63,7 +63,7 @@ const BanerFilms = ({ showtimes }) => {
   };
   return (
     <section className="banner_films">
-      {showtimes ? (
+      {showTimes ? (
         <Tabs
           defaultActiveKey="1"
           centered
@@ -249,7 +249,6 @@ const BanerFilms = ({ showtimes }) => {
             </Row>
           </Col>
         </Row>
-       
       </div>
     </section>
   );

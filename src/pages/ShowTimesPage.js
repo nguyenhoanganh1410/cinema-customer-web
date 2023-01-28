@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Breadcrumb, Layout, Menu, theme } from "antd";
 import { navData } from "../data/data";
 import logo from "../imgage/logo.svg";
@@ -8,9 +8,11 @@ import BanerFilms from "../components/film/BanerFilms";
 import CardsComponent from "../components/ui/CardsComponent";
 import PromotionComponent from "../components/ui/PromotionComponent";
 import FooterComponent from "../components/ui/FooterComponent";
+import "date-carousel/date-carousel.js";
 
 const { Header, Content, Footer } = Layout;
 const ShowTimesPage = () => {
+  const [showTimes, setShowTimes] = useState(true);
   const {
     token: { colorBgContainer },
   } = theme.useToken();
@@ -18,11 +20,10 @@ const ShowTimesPage = () => {
     <Layout className="layout">
       <HeaderPage />
 
-      <BanerFilms showtimes/>
+      <BanerFilms showTimes={showTimes} />
 
       <PromotionComponent />
       <FooterComponent />
-     
     </Layout>
   );
 };

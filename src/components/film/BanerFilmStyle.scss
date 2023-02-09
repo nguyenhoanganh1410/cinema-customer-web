@@ -20,6 +20,41 @@
 
     .film_choise{
         margin: 4rem 0;
+        .blocks-time{
+            display: flex;
+            align-items: center;
+        }
+        .block-time{
+            &.active{
+                background-color: #42af33;
+                span{
+                    color: white;
+                }
+            }
+            width: 80px;
+            height: 60px;
+            border-radius: 2px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            transition: all 0.4s;
+            .date-span{
+                font-size: 12px;
+            }
+            &:hover{
+                background-color: #42af33;
+                span{
+                    color: white;
+                }
+            }
+            span{
+                color: #a6b2c9;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
         // .container{
         //     padding-left: 4rem;
         //     padding-right: 4rem;
